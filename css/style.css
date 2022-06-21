@@ -1,0 +1,111 @@
+body {
+  background-color: rgb(250, 250, 250);
+}
+::placeholder {
+  text-align: center;
+  font-size: 14px;
+  color: gray;
+  background-position: 5%;
+  background-size: 6%;
+  background-image: url(../assets/search-solid.svg);
+  background-repeat: no-repeat;
+}
+
+input.empty {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+  background-color: #fafafa;
+}
+
+.postuserfont {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 15px;
+  color: black;
+}
+
+.storyphoto-wrapper {
+  position: relative;
+  height: 60px;
+  width: 60px;
+  margin-right: 13px;
+  border-radius: 50%;
+}
+
+.storyphoto {
+  position: absolute;
+  height: 60px;
+  width: 60px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.storyphoto-wrapper::after {
+  content: "";
+  display: block;
+  position: absolute;
+  left: -3px;
+  right: -3px;
+  bottom: -3px;
+  top: -3px;
+  border-radius: 50%;
+  z-index: 0;
+  background: linear-gradient(
+    45deg,
+    rgba(254, 218, 119, 1) 0%,
+    rgba(245, 133, 41, 1) 19%,
+    rgba(221, 42, 123, 1) 44%,
+    rgba(129, 52, 175, 1) 67%,
+    rgba(81, 91, 212, 1) 100%
+  );
+}
+
+#sticky-sidebar {
+  position: fixed;
+}
+.rightpanel {
+  background-color: transparent;
+  border: none;
+}
+.storytext {
+  display: inline-block;
+  width: 65px;
+  margin-top: 5px;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 12px;
+  color: black;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.rightpanellinks {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.rightpanellinks:hover {
+  text-decoration: none;
+  color: lightgrey;
+}
+
+.logo {
+  margin-left: 192px;
+}
+
+.middlearea {
+  max-height: 200px !important;
+}
+
+.rightpanellinks:not(:last-of-type)::after {
+  content: "\00B7";
+  margin: 0 0.25em 0 0.25em;
+}
